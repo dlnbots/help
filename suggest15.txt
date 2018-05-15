@@ -1,0 +1,58 @@
+{
+  "name": "upd_it_r",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "CEqNO",
+  "actions": [
+    {
+      "title": "",
+      "author": "Application: Apply",
+      "color": "#f44242",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "https://dlnbots.github.io/images/help.png",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "app:1 Position Name",
+      "message": "${serverVars(\"r_field_1\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "app:2 Reply",
+      "message": "${serverVars(\"r_field_2\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "${serverVars(\"r_topmessage\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Info: (+Prefix) a - Send, c - Cancel, 1 - Edit Position Name, 2 - Edit Reply",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
