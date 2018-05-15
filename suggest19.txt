@@ -1,0 +1,75 @@
+{
+  "name": "setmessage.apply",
+  "permissions": "MANAGE_ROLES",
+  "restriction": "0",
+  "_id": "Ydrub",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "2",
+      "varName": "r_topmessage",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "2",
+      "varName": "r_topmessage",
+      "name": "Save Variable"
+    },
+    {
+      "title": "",
+      "author": "Application Config",
+      "color": "#39B54A",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "http://sanyangfrp.com/data/out/759/511369365-checkmark-graphic.png",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "The apply message has been set to: ${serverVars(\"r_topmessage\")}\n\n*Try `app:apply` to find it!*",
+      "name": "Set Embed Description"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "user_img_url",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Command run by ${tempVars(\"username\")}",
+      "footerIcon": "${tempVars(\"user_img_url\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "0"
+}
