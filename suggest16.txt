@@ -1,0 +1,66 @@
+{
+  "name": "upd_it",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "CEqAv",
+  "actions": [
+    {
+      "title": "",
+      "author": "Application: Create Slide",
+      "color": "#f44242",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "https://dlnbots.github.io/images/help.png",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Position Name",
+      "message": "${serverVars(\"field_1\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Description",
+      "message": "${serverVars(\"field_2\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "HEX Bar Colour",
+      "message": "${serverVars(\"field_3\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Edit the below infomation, you can set this to your own custom message",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Info: (+Prefix) s - Send, c - Cancel, 1 - Edit Position Name, 2 - Edit Desc",
+      "footerIcon": "",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
