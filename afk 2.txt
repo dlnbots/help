@@ -1,0 +1,109 @@
+{
+  "name": "",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "zmmpL",
+  "actions": [
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "is_afk",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "isafk",
+      "name": "Store Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "isafk",
+      "comparison": "1",
+      "value": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "1",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "dataName": "afk_reason",
+      "defaultVal": "0",
+      "storage": "1",
+      "varName2": "reason",
+      "name": "Store Member Data"
+    },
+    {
+      "member": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "${tempVars(\"username\")}",
+      "color": "#f44242",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfDow4RMfH_n_zfbO5FXTeEYlzEBPX3pBEpowOcpAYmUsg_yYVWg",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "reason",
+      "comparison": "5",
+      "value": "db!afk",
+      "iftrue": "2",
+      "iftrueVal": "11",
+      "iffalse": "0",
+      "iffalseVal": "11",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "is currently `AFK` for ${tempVars(\"reason\")}",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "is currently `AFK`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "3"
+}

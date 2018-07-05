@@ -1,0 +1,115 @@
+{
+  "name": "afk",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "ZVCrH",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "is_afk",
+      "defaultVal": "1",
+      "storage": "1",
+      "varName2": "isafk",
+      "name": "Store Member Data"
+    },
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "reason",
+      "name": "Store Command Params"
+    },
+    {
+      "title": "",
+      "author": "AFK",
+      "color": "#39B54A",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "http://sanyangfrp.com/data/out/759/511369365-checkmark-graphic.png",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "isafk",
+      "comparison": "2",
+      "value": "1",
+      "iftrue": "2",
+      "iftrueVal": "10",
+      "iffalse": "0",
+      "iffalseVal": "9",
+      "name": "Check Variable"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "is_afk",
+      "changeType": "0",
+      "value": "1",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "You are now AFK",
+      "name": "Set Embed Description"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "afk_reason",
+      "changeType": "0",
+      "value": "tempVars(\"reason\")",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "is_afk",
+      "changeType": "0",
+      "value": "0",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "You are now not AFK",
+      "name": "Set Embed Description"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "dataName": "afk_reason",
+      "changeType": "0",
+      "value": "No Reason",
+      "name": "Control Member Data"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    }
+  ],
+  "comType": "0"
+}
